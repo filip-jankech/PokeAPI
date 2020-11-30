@@ -1,0 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.loading {
+  margin-top: 6rem;
+}
+
+body {
+  overflow-y: scroll;
+  color: rgb(40, 40, 40);
+  font-family: 'Ranchers', cursive;
+  background-color: rgb(145, 201, 190);
+  background-image: url('/bulba.jpg');
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 60%;
+  max-width: 420px;
+  margin: 6rem auto;
+
+  @media (max-width: 699px) {
+    width: 90%;
+  }
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 3.5rem;
+  text-align: center;
+
+  @media (max-width: 699px) {
+    font-size: 3rem;
+  }
+}

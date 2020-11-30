@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+.accordion__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion {
+  background-color: #eee;
+  cursor: pointer;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.accordion:hover,
+.active {
+  background-color: #ccc;
+}
+
+.accordion__name {
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 20px;
+}
+
+.accordion__icon {
+  margin-left: auto;
+  transition: transform 0.5s ease-in-out;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.accordion__content {
+  background-color: rgba(255, 255, 255, 0.9);
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.accordion__image {
+  padding: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 449px) {
+    padding: 25px;
+  }
+
+  img {
+    width: 80%;
+  }
+}
